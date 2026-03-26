@@ -1,12 +1,13 @@
 package tls_client
 
 import (
+	"io"
+	"net/http"
+
 	"github.com/aurorax-neo/tls_client_httpi"
 	fhttp "github.com/bogdanfinn/fhttp"
 	tlsClient "github.com/bogdanfinn/tls-client"
 	"github.com/bogdanfinn/tls-client/profiles"
-	"io"
-	"net/http"
 )
 
 type TlsClient struct {

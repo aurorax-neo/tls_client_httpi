@@ -2,6 +2,7 @@ package tls_client
 
 import (
 	"fmt"
+
 	fhttp "github.com/bogdanfinn/fhttp"
 	"github.com/bogdanfinn/fhttp/httputil"
 )

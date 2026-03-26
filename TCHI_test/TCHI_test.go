@@ -2,10 +2,11 @@ package TCHI_test
 
 import (
 	"fmt"
+	"testing"
+
 	"github.com/aurorax-neo/tls_client_httpi/TCHUtil"
 	"github.com/aurorax-neo/tls_client_httpi/tls_client"
 	"github.com/bogdanfinn/tls-client/profiles"
-	"testing"
 )
 
 func TestGetReq(t *testing.T) {
@@ -20,7 +21,7 @@ func TestGetReq(t *testing.T) {
 func TestGetProxy(t *testing.T) {
 	c := tls_client.DefaultClient()
 	c.SetProxy("http://127.0.0.1:7890")
-	response, err := c.Request("GET", "https://www.ip.cn/api/index?ip&type=0", nil, nil, nil)
+	response, err := c.Request("GET", "https://ipv4.ip.sb", nil, nil, nil)
 	if err != nil {
 		return
 	}
